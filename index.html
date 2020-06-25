@@ -19,6 +19,8 @@
   <script>
     var ajax = new XMLHttpRequest();
     ajax.open('GET', 'https://h20-space.com/htmlbook/images.php');
+    ajax.responseType = 'json';
+    ajax.send(null);
   </script>
 
 </body>
