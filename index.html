@@ -28,7 +28,7 @@
           var data = this.response[i];
 
           var img = document.createElement('img');
-          img.setAttribute('src, data.path');
+          img.setAttribute('src', data.path);
 
           var caption = document.createElement('div');
           caption.className = 'inner';
@@ -39,6 +39,7 @@
           div.appendChild(img);
           div.appendChild(caption);
 
+          document.getElementById('img_unit').appendChild(div);
         }
       }
     };
