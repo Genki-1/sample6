@@ -25,7 +25,10 @@
     ajax.onreadystatechange = function() {
       if (ajax.readyState === XMLHttpRequest.DONE && ajax.status === 200) {
         for (var i=0; i<this.response.length; i++) {
-          alert(this.response[i].path);
+          var data = this.response[i];
+
+          var img = document.createElement('img');
+          img.setAttribute('src, data.path');
         }
       }
     };
